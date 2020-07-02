@@ -99,6 +99,7 @@ body {
     background: hsl(180, 31%, 95%);
     font-size: 15px;
     padding: 5px;
+    margin: 10px 0;
 }
 
 /* Mobile */
@@ -110,19 +111,17 @@ body {
     
     .card-image {
         position: relative;
-        top: -50px
+        top: -70px
     }
 
     .title-badges {
         position: absolute;
         top: 70px;
-        margin-left: 10px;
     }
 
     .jobPosition {
         position: absolute;
         top: 110px;
-        margin-left: 10px;
         border-bottom: 2px solid grey;
         padding-bottom: 10px;
     }
@@ -138,6 +137,9 @@ body {
     .languagesAndTools {
         position: absolute;
         top: 210px;
-        left: 26px;
+    }
+
+    p.card-text.right-text.d-inline.skill {
+        line-height: 2.5;
     }
 }
