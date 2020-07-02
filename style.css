@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap');
+
+body {
+    background-color: hsl(180, 52%, 96%) !important;
+    font-size: 15px;
+}
+
+.header {
+    background-color: hsl(180, 29%, 50%);
+    width: 100%;
+    height: 100px;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.card {
+    padding: 20px 0;
+    margin: 15px 0;
+    
+}
+
+.card:hover {
+    box-shadow: 5px 10px 8px hsl(180, 29%, 50%);
+    transition: all 0.3s ease-in-out;
+    border-left: 5px solid hsl(180, 29%, 50%);
+}
+
+.card-image {
+    width: 70px;
+    margin: 0 20px;
+}
+
+.card-title, .jobPosition h5 {
+    font-family: 'Spartan';
+    font-weight: 700;
+}
+
+.jobPosition h5 {
+    color: #000000;
+}
+
+.card-title, .badge {
+    display: inline;
+}
+
+.badge {
+    display: none !important;
+}
+
+.new {
+    display: inline-block !important;
+}
+
+.featured {
+    display: inline-block !important;
+}
+
+.badge-primary {
+    background-color: hsl(180, 29%, 50%) !important;
+}
+
+.card-text {
+    font-family: 'Spartan';
+    font-weight: 500;
+}
+
+.title-badges {
+    margin-bottom: 10px;
+}
+
+.card-title, .card-text, .right-text {
+    color: hsl(180, 29%, 50%);
+}
+
+.sub-text {
+    display: inline;
+    color: grey;
+}
+
+.fa-circle {
+    color: grey;
+    font-size: 5px;
+    vertical-align: middle;
+    padding: 5px 10px;
+}
+
+.languagesAndTools {
+    position: relative;
+    top: -55px;
+}
+
+.right-text {
+    background: hsl(180, 31%, 95%);
+    font-size: 15px;
+    padding: 5px;
+}
+
+/* Mobile */
+@media screen and (max-width: 400px) {
+    .card {
+        margin-top: 40px;
+        height: 300px;
+    }
+    
+    .card-image {
+        position: relative;
+        top: -50px
+    }
+
+    .title-badges {
+        position: absolute;
+        top: 70px;
+        margin-left: 10px;
+    }
+
+    .jobPosition {
+        position: absolute;
+        top: 110px;
+        margin-left: 10px;
+        border-bottom: 2px solid grey;
+        padding-bottom: 10px;
+    }
+
+    .card-text:nth-child(1) {
+        margin: 10px 0;
+    }
+
+    .card-text.sub-text {
+        margin-bottom: 10px;
+    }
+
+    .languagesAndTools {
+        position: absolute;
+        top: 210px;
+        left: 26px;
+    }
+}
