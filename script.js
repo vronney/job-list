@@ -10,7 +10,7 @@ async function fetchData() {
       `);
 
       const tools = job.tools.map(tool => `
-        <p class="card-text right-text tools d-inline mr-2">${tool}</p>
+        <p class="card-text right-text tools d-inline mr-2 tool">${tool}</p>
       `);
 
         let htmlSegment = `<div class="card d-inline-block w-100">

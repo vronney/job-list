@@ -137,13 +137,15 @@ body {
 /* Skills */
 
 .tags,
-.skills{
+.skills,
+.tool{
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
   .tag,
-  .skill{
+  .skill, 
+  .tool{
     margin-bottom: 20px;
     border: none;
     padding: 9px 10px 5px;
@@ -157,10 +159,11 @@ body {
     transition: all 0.1s ease-in;
     background-color: var(--light-cyan);
   }
-  .skill{
+  .skill, .tool{
     cursor: cell;
   }
-  .skill:hover{
+  .skill:hover,
+  .tool:hover{
     color: white;
     background-color: var(--header-cyan);
   }
@@ -236,12 +239,23 @@ body {
         padding-bottom: 10px;
     }
 
+    .tag,
+    .skill, 
+    .tool{
+        margin-right: 0;
+    }
+
+    .skill, .tool {
+        font-size: 12px;
+    }
+
     .card-text:nth-child(1) {
         margin: 10px 0;
     }
 
     .card-text.sub-text {
         margin-bottom: 10px;
+        font-size: 12px;
     }
 
     .languagesAndTools {
