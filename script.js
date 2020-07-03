@@ -13,7 +13,6 @@ async function fetchData() {
         <p class="card-text right-text tools d-inline mr-2">${tool}</p>
       `);
 
-      
         let htmlSegment = `<div class="card d-inline-block w-100">
                            <div class="card-body">
                            <img class="card-image float-left" src="${job.logo}" alt="${job.company} Image">
@@ -42,6 +41,7 @@ async function fetchData() {
     });
 
     let cardBody = document.querySelector('.container');
+    
     cardBody.innerHTML = html;
     
     console.log(data);
