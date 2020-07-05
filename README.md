@@ -2,6 +2,8 @@
 
 ![Design preview for the Job Listings coding challenge](./design/desktop-preview.jpg)
 
+## Ron's [solution](https://vronney.github.io/job-list/)
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
