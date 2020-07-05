@@ -46,6 +46,9 @@ async function fetchData() {
   console.log(data);
 
   filterData();
+  removeSkill();
+  resetFilter();
+
 }
 
 // Filter skill tags
@@ -80,9 +83,6 @@ const filterData = () => {
   
   searchBody.innerHTML = filterContent;
 
-  removeSkill();
-  resetFilter();
-
 }
 
 // Remove skill from filter and remove job from main display
@@ -108,7 +108,7 @@ const removeSkill = () => {
 const resetFilter = () => {
   let clearTag = document.querySelector('.clear');
   clearTag.addEventListener('click', () => {
-    fetchData();
+    window.location.reload();
   });
 }
 
