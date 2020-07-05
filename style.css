@@ -32,16 +32,21 @@ body {
     height: 100px;
 }
 
-/* .search-container {
-    min-height: 160px;
+.container {
+    margin-top: 50px;
+}
+
+.search-container {
+    min-height: 150px;
     position: relative;
 }
 
 .search {
+    min-height: 100px;
     max-width: 1200px;
     padding: 0 25px;
     margin: 0 auto;
-} */
+}
 
 .attribution { 
     font-size: 11px; text-align: center; 
@@ -143,6 +148,15 @@ body {
   align-items: center;
   flex-wrap: wrap;
 }
+
+.search-container ul {
+    list-style: none;
+}
+
+.search-container ul li {
+    font-size: 12px;
+    margin: 8px 0;
+}
   .tag,
   .skill, 
   .tool{
@@ -179,7 +193,7 @@ body {
   bottom: -30px;
   border-radius: 5px;
   box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.4);
-  padding: 20px 20px 0px;
+  padding: 20px 20px 20px;
 }
 
 .tag{
@@ -210,9 +224,17 @@ body {
   box-shadow: 0px 0px 10px 3px #ff5d51;
 }
 
+.clear {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
 
 /* Mobile */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 656px) {
     .header {
         background-image: url("./images/bg-header-mobile.svg");
     }
@@ -245,6 +267,11 @@ body {
         margin-right: 0;
     }
 
+    .tag:after {
+        width: 20px;
+        background-size: 8px;
+    }
+
     .skill, .tool {
         font-size: 12px;
     }
@@ -265,5 +292,18 @@ body {
 
     p.card-text.right-text.d-inline.skill {
         line-height: 2.5;
+    }
+
+    .search-container {
+        top: 55px;
+        margin-bottom: 65px;
+    }
+
+    .tag {
+        font-size: 8px;
+    }
+
+    .clear {
+        bottom: -25px;
     }
 }
